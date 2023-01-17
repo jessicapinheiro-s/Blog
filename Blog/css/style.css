@@ -83,17 +83,16 @@ body {
     display: flex;
     width: 100%;
     align-items: center;
+    border: 1px solid green;
     justify-content: space-around;
 }
 .box-area-box {
-    width: 25%;
-    display: flex;
+    width:15%;
     background-color: var(--bc-color-principal);
     border-radius: 8px;
-    margin: 0px 100px;
 }
 .box-area-box-content {
-    padding: 20px;
+    padding: 20px 30px;
     color: var(--fonte-principal);
 }
 /*ÁREA DA SEÇÃO COM ESTRUTURA GRID*/
