@@ -1,0 +1,79 @@
+@media (max-width : 800px) {
+    body div {
+        border: 1px solid red;
+    }
+
+    header .menu .menu-list ul {
+        display: none;
+    }
+
+    /*CONTEINER GRID DO BODY*/
+    .conteiner-content {
+        grid-template-columns: 100%;
+        grid-template-rows: 450px 850px 700px 700px;
+        grid-template-areas: 'slides '
+            'box '
+            'secao '
+            'dados ';
+    }
+
+    .box-area {
+        display: block;
+        width: 100%;
+    }
+
+    .box-area-box {
+        width: 300px;
+        margin: 20px auto;
+    }
+
+    .slide-area-description-desc {
+        width: 100%;
+    }
+
+    .section-area-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 200px 150px;
+        grid-template-areas: 'img-grande '
+            'texto'
+            'img-pequena';
+        width: 100%;
+    }
+    .section-area-img {
+        width:10%;
+        padding: 0px;
+    }
+
+    .section-area-img img {
+        width: 300px;
+    }
+
+    .section-area-box {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section-area-box-content {
+        width: 10%;
+    }
+
+    .section-area-txt {
+        width:60%;
+        padding: 0px;
+    }
+
+    .section-area-txt-tx {
+        width: 90%;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .slide-area-description,
+    .slide-area-tittle {
+        width:100%;
+        
+    }
+}
