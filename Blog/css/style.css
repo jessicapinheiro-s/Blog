@@ -235,6 +235,8 @@ body {
 .menu-footer {
     grid-area: menu-normal;
     padding: 30px 100px;
+    text-align: center;
+
 }
 
 .menu-footer .menu-list ul {
@@ -245,6 +247,7 @@ body {
 .itens-menu {
     grid-area: menu-footer;
     padding: 30px 100px;
+    text-align: center;
 }
 
 .itens-menu .menu-itens-footer ul {

@@ -117,9 +117,18 @@
     .section-area-txt-tx {
         width: 90%;
     }
-
+    /*rodapé*/
     .footer {
         display: block;
+    }
+    .logo-footer {
+        padding: 30px ;
+    }
+    .menu-footer {
+        padding: 30px ;
+    }
+    .itens-menu {
+        padding: 30px;
     }
 
     .slide-area-description,
