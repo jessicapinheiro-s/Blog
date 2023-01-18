@@ -1,10 +1,10 @@
 @media (max-width : 600px) {
-    body div {
-        border: 1px solid red;
-    }
     /*cabeçalho*/
     header .menu .menu-list ul {
         display: none;
+    }
+    body div{
+        border: 1px yellow solid;
     }
 
     .header .logo {
@@ -82,17 +82,19 @@
     
 
     .section-area-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         grid-template-rows: 300px 200px 150px;
         grid-template-areas: 'img-grande '
             'texto'
             'img-pequena';
-        width: 100%;
+            border: 1px solid red;
+        width: 100%;    
     }
 
     .section-area-img {
-        width: 10%;
         padding: 0px;
+        border: 1px solid green;
+
     }
 
     .section-area-img img {
@@ -100,9 +102,16 @@
     }
 
     .section-area-box {
-        width: 50%;
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        border: 1px solid green;
+    }
+    .section-area-box-content{
+        font-size: 1rem;
+        width: ;
+        padding: 0px;
+        text-align: center;
     }
 
     .section-area-box-content {
@@ -110,8 +119,9 @@
     }
 
     .section-area-txt {
-        width: 60%;
         padding: 0px;
+        border: 1px solid green;
+
     }
 
     .section-area-txt-tx {

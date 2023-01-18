@@ -97,7 +97,6 @@ body {
 }
 /*ÁREA DA SEÇÃO COM ESTRUTURA GRID*/
 .section-area {
-    width: 100%;
     grid-area: secao;
     background:linear-gradient(90deg,  #111111,  #050505);
 }
