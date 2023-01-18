@@ -2,7 +2,7 @@
     body div {
         border: 1px solid red;
     }
-
+    /*cabeçalho*/
     header .menu .menu-list ul {
         display: none;
     }
@@ -122,5 +122,61 @@
     .slide-area-tittle {
         width: 100%;
 
+    }
+
+    .dados-area-content{
+        width: 90%;
+        background-color: #fff;
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows: 1fr 50px;
+        grid-template-areas: 'checklist' 
+                            ' frase';
+    }
+    /*icone grande*/
+    .conteiner-2{
+        display: none;
+    }
+    .conteiner-3{
+        padding: 0px;
+        width: 80%;
+        margin: auto;
+    }
+    .conteiner-4{
+        grid-area: frase;
+        padding: 10px ;
+    }
+    .conteiner-4-content-frase{
+        text-align: center;
+        font-size: 1.1rem;
+
+    }
+    .conteiner-3 .conteiner-3-content-lista ul .conteiner-3-content-lista-item{
+        margin: 40px 0px 20px;
+        font-size: 1.4rem;
+    }
+
+    /*icones dos dados*/
+    .dados-area-content-icons{
+        width: 100%;
+    }
+
+    .conteiner-1-icons{
+        display: flex;
+        width:100%;
+        margin: auto;
+        border-radius: 10px;
+    }
+    .icons{
+        padding: 10px;
+        text-align: center;
+        color: var(--fonte-principal);
+    }
+    .icons i{
+        font-size: 1.5rem;
+    }
+    .icons h2{
+        font-size: 1rem;
     }
 }

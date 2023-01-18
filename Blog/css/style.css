@@ -148,7 +148,6 @@ body {
     margin: 50px auto;
     background-color: #fff;
     border-radius: 8px;
-    display: flex;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 50px;
@@ -169,7 +168,7 @@ body {
 .conteiner-1-icons{
     background-color: var(--bc-color-principal);
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
     border-radius: 10px;
 }
