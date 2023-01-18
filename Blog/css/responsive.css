@@ -27,7 +27,7 @@
         display: block;
         width: 100%;
         padding: 30px 0px;
-        background-image: url(Blog/img/pexels-markus-spiske-1089438.jpg);
+        background-image: url(/Blog/img/pexels-markus-spiske-1089438.jpg);
         background-repeat: none;
         background-attachment: fixed;
         background-size: 100%;
@@ -107,9 +107,10 @@
         align-items: center;
         border: 1px solid green;
     }
+
     .section-area-box-content{
         font-size: 1rem;
-        width: ;
+
         padding: 0px;
         text-align: center;
     }
