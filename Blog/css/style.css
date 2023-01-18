@@ -96,6 +96,9 @@ body {
     color: var(--fonte-principal);
 }
 /*ÁREA DA SEÇÃO COM ESTRUTURA GRID*/
+.section-area  div{
+    border:1px solid green;
+}
 .section-area {
     grid-area: secao;
     background:linear-gradient(90deg,  #111111,  #050505);
@@ -105,14 +108,17 @@ body {
     margin: auto;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 20%;
+    grid-template-columns: 1fr 500px;
     grid-template-rows: 500px 100px;
     grid-template-areas: 'img-grande img-pequena'
                          'texto texto';
 }
 .section-area-img {
     grid-area: img-grande;
-    padding: 60px 60px;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
 }
 .section-area-img img {
     width: 650px;
@@ -125,11 +131,11 @@ body {
     grid-area: img-pequena;
 }
 .section-area-box-content {
-    width: 80%;
+    width: 50%;
     margin: 40px auto;
     background-color: var(--bc-color-principal);
     border-radius: 8px;
-    padding: 15px;
+    padding: 15px 20px;
     text-align: center;
     color: var(--fonte-principal);
 }
