@@ -1,9 +1,15 @@
 @media (max-width : 600px) {
+    :root {
+        --bc-color-principal: #177935;
+        --fonte-principal: #fafafa;
+    }
+
     /*cabeçalho*/
     header .menu .menu-list ul {
         display: none;
     }
-    body div{
+
+    body div {
         border: 1px yellow solid;
     }
 
@@ -22,6 +28,7 @@
     .header .menu-responsive-icon {
         padding: 30px 30px;
     }
+
     /*area do slide*/
     .slide-area {
         display: block;
@@ -40,17 +47,21 @@
         margin: auto;
         height: 100%;
     }
+
     /*titulo do slide*/
-    .slide-area-description-title{
+    .slide-area-description-title {
         width: 70%;
         margin: auto;
     }
-    .slide-area-description-desc{
+
+    .slide-area-description-desc {
         margin: auto;
     }
-    .slide-area-description-title h2{
+
+    .slide-area-description-title h2 {
         font-size: 2.5rem;
     }
+
     /*CONTEINER GRID DO BODY*/
     .conteiner-content {
         grid-template-columns: 100%;
@@ -79,7 +90,10 @@
         margin: 20px auto;
     }
 
-    
+
+    .section-area-box-content {
+        width: 10%;
+    }
 
     .section-area-content {
         grid-template-columns: 100%;
@@ -87,8 +101,8 @@
         grid-template-areas: 'img-grande '
             'texto'
             'img-pequena';
-            border: 1px solid red;
-        width: 100%;    
+        border: 1px solid red;
+        width: 100%;
     }
 
     .section-area-img {
@@ -102,21 +116,18 @@
     }
 
     .section-area-box {
-        display: flex;
+        display: none;
+        width: 100%;
         justify-content: space-around;
         align-items: center;
         border: 1px solid green;
     }
 
-    .section-area-box-content{
-        font-size: 1rem;
-
-        padding: 30px;
-        text-align: center;
-    }
-
     .section-area-box-content {
-        width: 10%;
+        font-size: 1rem;
+        text-align: center;
+
+        width: 100%;
     }
 
     .section-area-txt {
@@ -128,16 +139,20 @@
     .section-area-txt-tx {
         width: 90%;
     }
+
     /*rodapé*/
     .footer {
         display: block;
     }
+
     .logo-footer {
-        padding: 30px ;
+        padding: 30px;
     }
+
     .menu-footer {
-        padding: 30px ;
+        padding: 30px;
     }
+
     .itens-menu {
         padding: 30px;
     }
@@ -148,59 +163,70 @@
 
     }
 
-    .dados-area-content{
+    .dados-area-content {
         width: 90%;
         background-color: #fff;
         border-radius: 8px;
         display: grid;
-        grid-template-columns:100%;
+        grid-template-columns: 100%;
         grid-template-rows: 1fr 50px;
-        grid-template-areas: 'checklist' 
-                            ' frase';
+        grid-template-areas: 'checklist'
+            ' frase';
     }
+
     /*icone grande*/
-    .conteiner-2{
+    .conteiner-2 {
         display: none;
     }
-    .conteiner-3{
+
+    .conteiner-3 {
         padding: 0px;
         width: 80%;
         margin: auto;
     }
-    .conteiner-4{
+
+    .conteiner-4 {
         grid-area: frase;
-        padding: 10px ;
+        padding: 10px;
     }
-    .conteiner-4-content-frase{
+
+    .conteiner-4-content-frase {
         text-align: center;
         font-size: 1.1rem;
 
     }
-    .conteiner-3 .conteiner-3-content-lista ul .conteiner-3-content-lista-item{
+
+    .conteiner-3 .conteiner-3-content-lista ul .conteiner-3-content-lista-item {
         margin: 40px 0px 20px;
         font-size: 1.4rem;
     }
 
     /*icones dos dados*/
-    .dados-area-content-icons{
+    .dados-area-content-icons {
         width: 100%;
     }
 
-    .conteiner-1-icons{
+   
+
+    .conteiner-1-icons {
         display: flex;
-        width:100%;
-        margin: auto;
+        width: 80%;
         border-radius: 10px;
+        background-color: var(--bc-color-principal);
+        margin: auto;
     }
-    .icons{
-        padding: 10px;
+
+    .icons {
+        padding: 20px;
         text-align: center;
         color: var(--fonte-principal);
     }
-    .icons i{
+
+    .icons i {
         font-size: 1.5rem;
     }
-    .icons h2{
+
+    .icons h2 {
         font-size: 1rem;
     }
 }

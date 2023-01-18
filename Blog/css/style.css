@@ -167,7 +167,6 @@ body {
 .conteiner-1{
     grid-area: icons;
     z-index:3;
-    width: 60%;
     margin: auto;
 }
 .conteiner-1-icons{
