@@ -169,7 +169,7 @@ body {
 .conteiner-1-icons{
     background-color: var(--bc-color-principal);
     display: flex;
-    width: 100%;
+    width: 50%;
     margin: 0px auto;
     border-radius: 10px;
 }
