@@ -96,9 +96,6 @@ body {
     color: var(--fonte-principal);
 }
 /*ÁREA DA SEÇÃO COM ESTRUTURA GRID*/
-.section-area  div{
-    border:1px solid green;
-}
 .section-area {
     grid-area: secao;
     background:linear-gradient(90deg,  #111111,  #050505);
