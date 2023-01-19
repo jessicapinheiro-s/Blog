@@ -5,12 +5,8 @@
     }
 
     /*cabeçalho*/
-    header .menu .menu-list ul {
+    .header .menu .menu-list ul {
         display: none;
-    }
-
-    body div {
-        border: 1px yellow solid;
     }
 
     .header .logo {
@@ -67,9 +63,9 @@
         grid-template-columns: 100%;
         grid-template-rows: 450px 850px 700px 450px;
         grid-template-areas: 'slides '
-            'box '
-            'secao '
-            'dados ';
+                            'box '
+                            'secao '
+                            'dados ';
     }
 
     .menu-responsive-icon {
@@ -99,16 +95,13 @@
         grid-template-columns: 100%;
         grid-template-rows: 300px 200px 150px;
         grid-template-areas: 'img-grande '
-            'texto'
-            'img-pequena';
-        border: 1px solid red;
+                            'texto'
+                            'img-pequena';
         width: 100%;
     }
 
     .section-area-img {
         padding: 0px;
-        border: 1px solid green;
-
     }
 
     .section-area-img img {
@@ -120,7 +113,6 @@
         width: 100%;
         justify-content: space-around;
         align-items: center;
-        border: 1px solid green;
     }
 
     .section-area-box-content {
@@ -132,8 +124,6 @@
 
     .section-area-txt {
         padding: 0px;
-        border: 1px solid green;
-
     }
 
     .section-area-txt-tx {
@@ -157,12 +147,7 @@
         padding: 30px;
     }
 
-    .slide-area-description,
-    .slide-area-tittle {
-        width: 100%;
-
-    }
-
+    /*area de dados*/
     .dados-area-content {
         width: 90%;
         background-color: #fff;
@@ -171,7 +156,7 @@
         grid-template-columns: 100%;
         grid-template-rows: 1fr 50px;
         grid-template-areas: 'checklist'
-            ' frase';
+            'frase';
     }
 
     /*icone grande*/
@@ -179,12 +164,14 @@
         display: none;
     }
 
+    /*content checkbox*/
     .conteiner-3 {
         padding: 0px;
         width: 80%;
         margin: auto;
     }
 
+    /*frase*/
     .conteiner-4 {
         grid-area: frase;
         padding: 10px;
@@ -205,18 +192,13 @@
     .dados-area-content-icons {
         width: 100%;
     }
+
     .conteiner-1-icons {
         display: flex;
         width: 80%;
         border-radius: 10px;
         background-color: var(--bc-color-principal);
         margin: auto;
-    }
-
-    .icons {
-        padding: 20px;
-        text-align: center;
-        color: var(--fonte-principal);
     }
 
     .icons i {
