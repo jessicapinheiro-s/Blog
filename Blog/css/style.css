@@ -37,47 +37,61 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 /*CONTEINER GRID DO BODY*/
 .conteiner-content {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 600px 400px 600px 600px;
     grid-template-areas: 'slides slides'
-                         'box box'
-                         'secao secao'
-                         'dados dados';
+        'box box'
+        'secao secao'
+        'dados dados';
 }
+
 /*ÁREA DO SLIDE*/
 .slide-area {
     grid-area: slides;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-image: url(../Blog/img/pexels-markus-spiske-1089438.jpg);
+    justify-content: left;
+    background-image: url(/Blog/img/pexels-markus-spiske-1089438.jpg);
     background-repeat: none;
     background-attachment: fixed;
     background-size: 100%;
 }
+
 .slide-area-description,
-.slide-area-tittle{
+.slide-area-tittle {
     width: 45%;
     padding: 30px 100px;
 }
-.slide-area-description-title{
+
+.slide-area-description-title {
     margin: 0px 0px 20px;
-    padding: 20px;
 }
-.slide-area-description-title h2{
-    font-size: 3rem;
+
+.slide-area-description-title h2 {
+    font-size: 4rem;
     color: var(--fonte-principal);
     width: 100%;
 }
+
 .slide-area-description-desc {
     background-color: #fff;
     border-radius: 8px;
     width: 70%;
     padding: 20px;
 }
+
+/*add uma margen depois do titulo ou icone*/
+.slide-area-description-desc h2,
+.box-area-box-content h2,
+.section-area-box-content h2,
+.icons i {
+    margin: 0px 0px 10px;
+}
+
 /*ÁREA DAS CAIXAS NA HORIZONTAL*/
 .box-area {
     grid-area: box;
@@ -86,20 +100,24 @@ body {
     align-items: center;
     justify-content: space-around
 }
+
 .box-area-box {
-    width:15%;
+    width: 15%;
     background-color: var(--bc-color-principal);
     border-radius: 8px;
 }
+
 .box-area-box-content {
     padding: 20px 30px;
     color: var(--fonte-principal);
 }
+
 /*ÁREA DA SEÇÃO COM ESTRUTURA GRID*/
 .section-area {
     grid-area: secao;
-    background:linear-gradient(90deg,  #111111,  #050505);
+    background: linear-gradient(90deg, #111111, #050505);
 }
+
 .section-area-content {
     width: 80%;
     margin: auto;
@@ -108,8 +126,9 @@ body {
     grid-template-columns: 1fr 500px;
     grid-template-rows: 500px 100px;
     grid-template-areas: 'img-grande img-pequena'
-                         'texto texto';
+        'texto texto';
 }
+
 .section-area-img {
     grid-area: img-grande;
     display: flex;
@@ -117,16 +136,20 @@ body {
 
     justify-content: center;
 }
+
 .section-area-img img {
     width: 650px;
 }
+
 .section-area-txt {
     grid-area: texto;
     padding: 10px 60px;
 }
+
 .section-area-box {
     grid-area: img-pequena;
 }
+
 .section-area-box-content {
     width: 50%;
     margin: 40px auto;
@@ -136,16 +159,19 @@ body {
     text-align: center;
     color: var(--fonte-principal);
 }
+
 .section-area-txt-tx {
     padding: 20px;
     text-align: center;
     color: var(--fonte-principal);
 }
-.dados-area{
+
+.dados-area {
     grid-area: dados;
     background-color: #000000;
 }
-.dados-area-content{
+
+.dados-area-content {
     width: 60%;
     margin: 50px auto;
     background-color: #fff;
@@ -153,86 +179,102 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 50px;
-    grid-template-areas: 'imagem checklist' 
-                        'frase frase';
+    grid-template-areas: 'imagem checklist'
+        'frase frase';
 }
-.dados-area-content-icons{
-    margin: 30px auto -90px ;
-    z-index:1;
+
+.dados-area-content-icons {
+    margin: 30px auto -90px;
+    z-index: 1;
     position: relative;
 }
-.conteiner-1{
+
+.conteiner-1 {
     grid-area: icons;
-    z-index:3;
+    z-index: 3;
     margin: auto;
 }
-.conteiner-1-icons{
+
+.conteiner-1-icons {
     background-color: var(--bc-color-principal);
     display: flex;
     width: 50%;
     margin: 0px auto;
     border-radius: 10px;
 }
-.icons{
+
+.icons {
     padding: 20px;
     text-align: center;
     color: var(--fonte-principal);
 }
-.icons i{
+
+.icons i {
     font-size: 2rem;
 }
-.conteiner-2{
+
+.conteiner-2 {
     grid-area: imagem;
     padding: 60px 60px 0px;
     width: 50%;
     text-align: center;
     font-size: 20rem;
 }
-.conteiner-3{
+
+.conteiner-3 {
     grid-area: checklist;
     padding: 60px 60px;
     width: 50%;
 }
-.conteiner-4{
+
+.conteiner-4 {
     grid-area: frase;
     padding: 0px 60px;
 }
-.conteiner-4-content-frase{
+
+.conteiner-4-content-frase {
     text-align: center;
 }
-.conteiner-3 .conteiner-3-content-lista ul{
+
+.conteiner-3 .conteiner-3-content-lista ul {
     list-style: none;
 }
-.conteiner-3 .conteiner-3-content-lista ul .conteiner-3-content-lista-item{
+
+.conteiner-3 .conteiner-3-content-lista ul .conteiner-3-content-lista-item {
     margin: 40px 0px 10px;
 }
-.conteiner-1-icons .icons{
+
+.conteiner-1-icons .icons {
     width: 30%;
 }
+
 /*RÓDAPÉ*/
 .footer {
     display: grid;
     grid-template-columns: 1fr 30% 30%;
     grid-template-rows: 1f60px;
     grid-template-areas: ' logo  menu-normal menu-footer'
-                         'copyRight copyRight copyRight';
-    background:linear-gradient(90deg,  #111111,  #050505);
+        'copyRight copyRight copyRight';
+    background: linear-gradient(90deg, #111111, #050505);
     color: var(--fonte-principal);
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
 }
-    
+
 
 .logo-footer {
     grid-area: logo;
     padding: 30px 100px;
 }
-.logo-footer h1{
+
+.logo-footer h1 {
     padding: 20px;
 }
-.logo-footer img{
+
+.logo-footer img {
     width: 300px;
     padding: 0px 20px;
 }
+
 .menu-footer {
     grid-area: menu-normal;
     padding: 30px 100px;
@@ -265,6 +307,6 @@ body {
     padding: 20px;
 }
 
-.menu-responsive-icon{
+.menu-responsive-icon {
     display: none;
 }
